@@ -3,9 +3,10 @@ import logo from "./logo.svg";
 import "./App.css";
 import List from "./components/List";
 
-interface IState {
+export interface IState {
   people: {
     name: string;
+    img: string;
     age: number;
     url: string;
     note?: string;
@@ -14,7 +15,7 @@ interface IState {
 
 function App() {
   const [people, setPeople] = useState<IState["people"]>([
-    { name: "LeBron James", url: "", age: 36, note: "fdvfd" },
+    { name: "LeBron James", img: "", url: "", age: 36, note: "fdvfd" },
   ]);
 
   return (
