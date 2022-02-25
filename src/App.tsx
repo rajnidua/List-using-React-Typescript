@@ -23,7 +23,7 @@ function App() {
     <div className="App">
       <h1>You are invited to the party</h1>
       <List people={people} />
-      <ADDToList />
+      <ADDToList setPeople={setPeople} people={people} />
     </div>
   );
 }
