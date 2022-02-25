@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import logo from "./logo.svg";
+
 import "./App.css";
 import List from "./components/List";
 import ADDToList from "./components/AddToList";
@@ -16,7 +16,34 @@ export interface IState {
 
 function App() {
   const [people, setPeople] = useState<IState["people"]>([
-    { name: "LeBron James", img: "", url: "", age: 36, note: "fdvfd" },
+    {
+      name: "John Smith",
+      img: "./images/party-1.jpeg",
+      url: "",
+      age: 10,
+      note: "Vegetarian",
+    },
+    {
+      name: "Issabella",
+      img: "./images/party-1.jpeg",
+      url: "",
+      age: 12,
+      note: "Gluten",
+    },
+    {
+      name: "Julia",
+      img: "./images/party-1.jpeg",
+      url: "",
+      age: 10,
+      note: "no preference",
+    },
+    {
+      name: "Jimmy",
+      img: "./images/party-1.jpeg",
+      url: "",
+      age: 11,
+      note: "Non-veg",
+    },
   ]);
 
   return (
